@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      .container {
+        border: 1px solid black;
+        padding: 10px;
+        width: 50%;
+      }
+      #form1,
+      #pass1 {
+        color: red;
+      }
+      #sucess {
+        color: green;
+        display: none;
+      }
+      #email {
+        display: block;
+        width: 80%;
+        padding: 5px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        margin-top: 10px;
+      }
+      #pass {
+        margin-top: 10px;
+        width: 80%;
+        padding: 5px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        display: block;
+      }
+      #btn {
+        width: 100px;
+        padding: 5px;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <label for="email">Email</label>
+      <input type="email " id="email" onchange="checkValidation()" />
+      <p id="form1"></p>
+      <label for="pass">Password</label>
+      <input type="password " id="pass" onchange="checkValidation()" />
+      <p id="pass1"></p>
+      <p id="sucess">All good to go!</p>
+      <button id="btn" onclick="submit()">Submit</button>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
